@@ -180,6 +180,7 @@ a:visited {
   color: #0366d6; }
 
 h1, h2, h3 {
+  font-weight: normal;
   border-bottom: 1px solid #eaecef;
   color: #111;
   /* Darker */ }
