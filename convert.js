@@ -1,4 +1,4 @@
-var showdown  = require('showdown');
+var showdown = require('showdown');
 var fs = require('fs');
 let pageTitle = process.argv[2] || ""
 var newFileSplit = pageTitle.split(".")[0];
@@ -6,7 +6,7 @@ var newFileSplit = pageTitle.split(".")[0];
 fs.readFile(__dirname + '/style.css', function (err, styleData) {
   fs.readFile(process.cwd() + '/' + pageTitle, function (err, data) {
     if (err) {
-      throw err; 
+      throw err;
     }
     let text = data.toString();
 
@@ -20,7 +20,7 @@ fs.readFile(__dirname + '/style.css', function (err, styleData) {
     let preContent = `
     <html>
       <head>
-        <title>` + pageTitle + `</title>
+        <title>` + "Jeffrey Ho" + `</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
       </head>
       <body>
@@ -40,7 +40,7 @@ fs.readFile(__dirname + '/style.css', function (err, styleData) {
     console.log(html);
 
     let filePath = process.cwd() + "/" + newFileSplit + ".html";
-    fs.writeFile(filePath, html, { flag: "wx" }, function(err) {
+    fs.writeFile(filePath, html, { flag: "wx" }, function (err) {
       if (err) {
         console.log("File '" + filePath + "' already exists. Aborted!");
       } else {
