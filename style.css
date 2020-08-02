@@ -33,8 +33,8 @@ body > #content {
 }
 
 hr {
-  color: #bbb;
-  background-color: #bbb;
+  color: #eaecef;
+  background-color: #eaecef;
   height: 1px;
   flex: 0 1 auto;
   margin: 1em 0;
@@ -47,12 +47,15 @@ hr {
  */
 a {
   color: #0366d6;
-  text-decoration: none; }
-  a:visited {
-    color: #0366d6; }
-  a:hover {
-    color: #0366d6;
-    text-decoration: underline; }
+  text-decoration: none;
+}
+a:visited {
+  color: #0366d6;
+}
+a:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
 
 pre {
   background-color: #f6f8fa;
@@ -68,13 +71,14 @@ pre {
   */
 
 code {
-  background-color: rgba(27,31,35,.05);
+  background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
   font-size: 85%;
   margin: 0;
   word-wrap: break-word;
-  padding: .2em .4em;
-  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  padding: 0.2em 0.4em;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+    monospace;
 }
 
 pre > code {
@@ -88,7 +92,6 @@ pre > code {
   word-wrap: normal;
   font-size: 100%;
 }
-
 
 /**
  * Blockquotes
@@ -107,9 +110,9 @@ blockquote {
   font-style: italic;
 }
 blockquote * {
-  font-style: normal !important;
+  font-style: normal;
   letter-spacing: 0;
-  color: #6a737d !important;
+  color: #6a737d;
 }
 
 /**
@@ -129,6 +132,11 @@ table {
 td {
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
+}
+.whiteBorder {
+  padding: 6px 26px 6px 0px;
+  border: 2px solid #fff;
+  margin: 0px;
 }
 
 th {
@@ -158,29 +166,45 @@ p {
   line-height: 24px;
   font-weight: 400;
   font-size: 16px;
+  color: #24292e;
+}
+
+pHead {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
   color: #24292e; }
 
 ul {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 li {
   color: #24292e;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
 li + li {
-  margin-top: 0.25em; }
+  margin-top: 0.25em;
+}
 
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #24292e; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #24292e;
+}
 
 a:visited {
-  color: #0366d6; }
+  color: #0366d6;
+}
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: normal;
   border-bottom: 1px solid #eaecef;
   color: #111;
-  /* Darker */ }
+  /* Darker */
+}
