@@ -30,28 +30,29 @@ fs.readFile(__dirname + "/style.css", function (err, styleData) {
           <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
           <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-          <div class = "container">
-              <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-light">
-                  <a class="navbar-brand" href="#">Jeffrey Ho</a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                      <div class="navbar-nav ml-auto">
-                          <a class="nav-item nav-link" href="#about">About</a>
-                          <a class="nav-item nav-link" href="#experience">Experience</a>
-                          <a class="nav-item nav-link" href="#coursework">Coursework</a>
-                          <a class="nav-item nav-link" href="#cv">CV</a>
-                      </div>
-                  </div>
-              </nav>
-          </div>
-
           <!-- FontAwesome icon import -->
           <link
               rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           />
+          <div class = "container">
+            <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+              <div>
+                <a class="navbar-brand" href="#">Jeffrey Ho</a>
+              </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#about">About</a>
+                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#experience">Experience</a>
+                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#coursework">Coursework</a>
+                    <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#cv">CV</a>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </head>
         <body>
           <div id='content'>

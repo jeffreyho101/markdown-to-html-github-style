@@ -11,21 +11,11 @@ body {
   padding: 30px;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    padding: 5px;
-  }
-
-  body > #content {
-    padding: 0px 20px 20px 20px !important;
-  }
-}
-
 body > #content {
   margin: 0px;
   max-width: 900px;
   border: 1px solid #fff;
-  padding: 10px 40px;
+  padding: 40px;
   padding-bottom: 20px;
   border-radius: 2px;
   margin-left: auto;
@@ -131,14 +121,58 @@ table {
 
 td {
   padding: 6px 13px;
-  border: 1px solid #dfe2e5;
-  width: 65%;
+  border: 1px solid #fff;
 }
-.whiteBorder {
+.whiteBorder65 {
   padding: 6px 26px 6px 0px;
   border: 2px solid #fff;
   margin: 0px;
+  width: 35%;
 }
+.whiteBorder35 {
+  padding: 6px 26px 6px 0px;
+  border: 2px solid #fff;
+  margin: 0px;
+  width: 35%;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  body {
+    padding-top: 60px;
+  }
+
+  body > #content {
+    padding: 0px 20px 20px 20px !important;
+  }
+
+  thead {
+    display: none;
+    border: 1px solid #fff;
+  }
+
+  table {
+    border: 1px solid #fff;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    border: 1px solid #fff;
+  }
+
+  td:before {
+    content: attr(data-th);
+    display: block;
+    border: 1px solid #fff;
+  }
+
+  img {
+    width: 200px;
+  }
+}
+
 
 th {
   font-weight: 600;
@@ -148,7 +182,7 @@ th {
 
 tr {
   background-color: #fff;
-  border-top: 1px solid #c6cbd1;
+  border-top: 1px solid #fff;
 }
 
 table tr:nth-child(2n) {
@@ -222,9 +256,8 @@ h3 {
 }
 
 .navbar .navbar-collapse {
-  text-align: center;
+  text-align: right;
 }
-
 .navbar-collapse.collapse.in {
-  display: block !important;
+  display: block!important;
 }
