@@ -44,12 +44,12 @@ fs.readFile(__dirname + "/style.css", function (err, styleData) {
                   <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav ml-auto">
+                <div class="nav navbar-nav ml-auto" style="float: right;">
                     <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#about">About</a>
                     <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#experience">Experience</a>
                     <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#coursework">Coursework</a>
                     <a class="nav-item nav-link" data-toggle="collapse" data-target=".navbar-collapse" href="#cv">CV</a>
-                </ul>
+                </div>
               </div>
             </nav>
           </div>
